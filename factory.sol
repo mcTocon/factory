@@ -12,16 +12,17 @@ pragma solidity 0.8.20;
 //////////______\/////_______\/////________\////////_____\/////_____\///____\///____\///_____\///_____\/////_____
 ///////////_______________________________________________________________________________________________________                 
 
-/// @title NEW_FACTORY Contract
-/// @author TOCON.IO
-/// @custom:security-contact support@tocon.io
-/// @notice This contract is used for creating new contract instances using the EIP-1167 minimal proxy pattern.
-/// @dev This contract utilizes OpenZeppelin's Clones library for deploying minimal proxies.
-
 // Explicit imports from OpenZeppelin
 import "@openzeppelin/contracts/proxy/Clones.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 
+/**
+ * @title NEW_FACTORY Contract
+ * @author TOCON.IO
+ * @custom:security-contact security@awesome.com
+ * @notice This contract is used for creating new contract instances using the EIP-1167 minimal proxy pattern.
+ * @dev This contract utilizes OpenZeppelin's Clones library for deploying minimal proxies.
+ */
 contract NEW_FACTORY {
     using Address for address;
 
